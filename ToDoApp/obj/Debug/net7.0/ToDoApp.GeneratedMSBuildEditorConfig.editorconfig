@@ -18,5 +18,11 @@ build_property.ProjectDir = D:\code\c#\ToDoApp\ToDoApp\
 [D:/code/c\#/ToDoApp/ToDoApp/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[D:/code/c\#/ToDoApp/ToDoApp/Views/AddItemView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [D:/code/c\#/ToDoApp/ToDoApp/Views/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/code/c\#/ToDoApp/ToDoApp/Views/ToDoListView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

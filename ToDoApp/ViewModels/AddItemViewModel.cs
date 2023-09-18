@@ -13,9 +13,14 @@ public class AddItemViewModel:ViewModelBase
 
     public AddItemViewModel()
     {
+        var isValidObservable = this.WhenAnyValue
+        (
+            x => x.Name,
+            x=> !string.IsNullOrWhiteSpace(x)
+        );
         
         OkCommand = ReactiveCommand.Create(
-            () => new ToDoItem { Name = Name });
+            () => new ToDoItem { Name = Name }, isValidObservable);
         CancelCommand = ReactiveCommand.Create((() => {}));
     }
     

@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Reactive;
+using ReactiveUI;
 using ToDoApp.DataModel;
 using ToDoApp.Views;
 

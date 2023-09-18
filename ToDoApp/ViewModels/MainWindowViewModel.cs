@@ -2,6 +2,7 @@
 using System.Reactive.Linq;
 using ReactiveUI;
 using System;
+using System.Linq;
 using ToDoApp.DataModel;
 using ToDoApp.Services;
 
@@ -19,7 +20,6 @@ public class MainWindowViewModel : ViewModelBase
     }
     
     public ToDoListViewModel ToDoList { get; }
-
     
     public ViewModelBase ContentViewModel
     {
@@ -46,5 +46,15 @@ public class MainWindowViewModel : ViewModelBase
 
         ContentViewModel = addItemViewModel;
 
+    }
+    
+    public void DeleteItems()
+    {
+        var checkedItems = ToDoList.ListItems.Where(item => item.isChecked).ToList();
+
+        foreach (var item in checkedItems)
+        {
+            ToDoList.ListItems.Remove(item);
+        }
     }
 }

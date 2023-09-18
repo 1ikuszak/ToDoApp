@@ -6,7 +6,6 @@
              mc:Ignorable="d" d:DesignWidth="250" d:DesignHeight="400"
              x:Class="ToDoApp.Views.AddItemView"
              x:DataType="viewModels:AddItemViewModel">
-    
     <DockPanel>
         <StackPanel DockPanel.Dock="Bottom">
             <Button

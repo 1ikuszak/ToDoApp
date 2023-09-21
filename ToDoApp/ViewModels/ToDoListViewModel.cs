@@ -13,6 +13,5 @@ public class ToDoListViewModel:ViewModelBase
     {
         ListItems = new ObservableCollection<ToDoItem>(items);
     }
-    
     public ObservableCollection<ToDoItem> ListItems { get; }
 }
